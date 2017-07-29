@@ -30,6 +30,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="topFree_fragment">Tap Free Fragment</string>
     <string name="TopPaid_fragment">Top Paid Fragment</string>
+    <string name="Inventory">Inventory</string>
+    <string name="order">Order to NGO</string>
 
 
     <string-array name="all_images">
@@ -41,4 +43,9 @@
         <item>Inventory</item>
         <item>Order to NGO</item>
     </string-array>
+
+    <integer-array name="fragmentIcon">
+        <item>@drawable/ic_action_ass</item>
+        <item>@drawable/ic_action_order</item>
+    </integer-array>
 </resources>

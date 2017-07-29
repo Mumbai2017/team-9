@@ -1,4 +1,4 @@
-package com.sumit.dell_pc.sanishasakhis.language;
+package com.sumit.dell_pc.sanishasakhis.Fragment;
 
 
 import android.content.res.TypedArray;
@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment {
             allDrawableImages.add(allImages.getDrawable(i));
             string.add(allStrings.getText(i).toString().trim());
         }
-        GridAdapter gridViewAdapter = new GridAdapter(getActivity(), allDrawableImages,string);
+        GridAdapter gridViewAdapter = new GridAdapter(getContext(), allDrawableImages,string);
         gridView.setAdapter(gridViewAdapter);
     }
 }
