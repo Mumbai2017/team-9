@@ -2,162 +2,197 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Place ORDERdd"
-        android:textSize="25dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Place order and quantity for each selected item-"
-        />
- <LinearLayout
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content">
-   <CheckBox
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Breakfast"/>
-
-     <EditText
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:hint="qty"/>
-
- </LinearLayout>
-
-
- <LinearLayout
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content">
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Methi masala"/>
-
-     <EditText
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:inputType="number"/>
-
- </LinearLayout>
-
-  <LinearLayout
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content">
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jeera"/>
-
-      <EditText
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:inputType="number"/>
-   </LinearLayout>
-   <LinearLayout
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content">
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Khichdi"/>
-
-       <EditText
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:inputType="number"/>
-
-   </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Low Calorie"/>
-
-        <EditText
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place ORDER"
+                android:textSize="20dp"/>
 
-</LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place order and quantity for each selected item-"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Breakfast"/>
 
-  <LinearLayout
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content">
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nachni"/>
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_12sdp"/>
 
-      <EditText
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:inputType="number"/>
-
-   </LinearLayout>
-
-   <LinearLayout
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content">
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Peppery Oats"/>
-
-       <EditText
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:inputType="number"/>
-
-   </LinearLayout>
-
-  <LinearLayout
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content">
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Punjabi Masala"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"/>
-
-  </LinearLayout>
+            </RelativeLayout>
 
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Punjabi Masala"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Methi masala"/>
 
-    </LinearLayout>
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_12sdp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total Cost"
-        android:textStyle="bold"
-        />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jeera"/>
+
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_12sdp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Khichdi"/>
+
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_12sdp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Low Calorie"/>
+
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_12sdp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nachni"/>
+
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_12sdp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peppery Oats"/>
+
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_12sdp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Punjabi Masala"/>
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_12sdp"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Punjabi Masala"/>
+                <NumberPicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_12sdp"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Cost"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tvCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_12sdp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnProceed"
+                android:text="Proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
 
