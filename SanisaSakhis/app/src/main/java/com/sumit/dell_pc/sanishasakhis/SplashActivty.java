@@ -1,12 +1,11 @@
-package com.sumit.dell_pc.sanisasakhis;
+package com.sumit.dell_pc.sanishasakhis;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 
-import com.sumit.dell_pc.sanisasakhis.auth.LoginActivity;
+import com.sumit.dell_pc.sanishasakhis.auth.LoginActivity;
 
 public class SplashActivty extends AppCompatActivity {
 
