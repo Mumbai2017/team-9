@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SanisaSakhis</string>
+    <string name="app_name">Sakhis</string>
     <string name="status">Status: %s</string>
     <string name="signin">Sign in with Google</string>
     <string name="signout">SignOut</string>
