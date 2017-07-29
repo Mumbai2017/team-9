@@ -1,12 +1,18 @@
 package com.nishitadutta.chaakri;
 
+import android.support.annotation.NonNull;
 import android.util.Log;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.nishitadutta.chaakri.models.order;
 
 import java.util.HashMap;
+
+import static com.google.android.gms.internal.zzs.TAG;
 
 /**
  * Created by Nishita on 29-07-2017.
@@ -22,6 +28,17 @@ public class FirebaseManager {
         Log.e("Firebase", "addNewOrder: " + qty + address );
         HashMap<String, Integer> order=new HashMap<>();
         order.put(address,qty);
-        orders.push().setValue(order);
+        orders.push().setValue(order).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                Log.e(TAG, "onComplete: " );
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.e(TAG, "onFailure: " + e.getMessage() );
+            }
+        });
+
     }
 }
