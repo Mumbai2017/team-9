@@ -53,6 +53,7 @@ public class DeliveryActivity  extends AppCompatActivity{
                         public void onClick(DialogInterface dialog, int id) {
                             // User clicked OK button
                             FirebaseManager.addNewOrder(qty, etAddress.getText().toString());
+                            btnSubmit.setEnabled(false);
                         }
                     });
                     builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
