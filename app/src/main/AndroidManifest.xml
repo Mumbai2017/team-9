@@ -18,6 +18,10 @@
         <activity
             android:name=".PlaceOrderToSakhi"
             android:label="@string/title_activity_place_order_to_sakhi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".orderplacing.Main2Activity"
+            android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
