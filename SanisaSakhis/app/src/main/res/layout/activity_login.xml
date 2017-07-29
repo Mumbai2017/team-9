@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sumit.dell_pc.sanisasakhis.LoginActivity">
+    tools:context="com.sumit.dell_pc.sanisasakhis.auth.LoginActivity">
 
     <TextView
         android:id="@+id/country"

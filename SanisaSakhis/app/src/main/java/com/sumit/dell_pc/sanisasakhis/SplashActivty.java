@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 import android.os.Handler;
 
+import com.sumit.dell_pc.sanisasakhis.auth.LoginActivity;
+
 public class SplashActivty extends AppCompatActivity {
 
     @Override

@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sumit.dell_pc.firebasedemo.language.LangFragment">
+
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_bar"
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.SearchView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/langList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
