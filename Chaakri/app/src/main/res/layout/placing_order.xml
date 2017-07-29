@@ -24,13 +24,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <CheckBox
-                    android:id="@+id/checkbox1"
+                    android:id="@+id/checkbox11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Breakfast"/>
 
                 <NumberPicker
-                    android:id="@+id/number1"
+                    android:id="@+id/number11"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -43,13 +43,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
-                    android:id="@+id/checkbox2"
+                    android:id="@+id/checkbox22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Methi masala"/>
 
                 <NumberPicker
-                    android:id="@+id/number2"
+                    android:id="@+id/number22"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -62,13 +62,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
-                    android:id="@+id/checkbox3"
+                    android:id="@+id/checkbox33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jeera"/>
 
                 <NumberPicker
-                    android:id="@+id/number3"
+                    android:id="@+id/number33"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -79,13 +79,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
-                    android:id="@+id/checkbox4"
+                    android:id="@+id/checkbox44"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Khichdi"/>
 
                 <NumberPicker
-                    android:id="@+id/number4"
+                    android:id="@+id/number44"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -97,13 +97,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
-                    android:id="@+id/checkbox5"
+                    android:id="@+id/checkbox55"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Low Calorie"/>
 
                 <NumberPicker
-                    android:id="@+id/number5"
+                    android:id="@+id/number55"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -115,13 +115,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
-                    android:id="@+id/checkbox6"
+                    android:id="@+id/checkbox66"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nachni"/>
 
                 <NumberPicker
-                    android:id="@+id/number6"
+                    android:id="@+id/number66"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -134,13 +134,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
-                    android:id="@+id/checkbox7"
+                    android:id="@+id/checkbox77"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Peppery Oats"/>
 
                 <NumberPicker
-                    android:id="@+id/number7"
+                    android:id="@+id/number77"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -153,12 +153,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
-                    android:id="@+id/checkbox8"
+                    android:id="@+id/checkbox88"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Punjabi Masala"/>
                 <NumberPicker
-                    android:id="@+id/number8"
+                    android:id="@+id/number88"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -172,12 +172,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
-                    android:id="@+id/checkbox9"
+                    android:id="@+id/checkbox99"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Punjabi Masala"/>
                 <NumberPicker
-                    android:id="@+id/number9"
+                    android:id="@+id/number99"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -197,13 +197,18 @@
                     />
 
                 <TextView
+                    android:text="0"
                     android:layout_alignParentRight="true"
-                    android:id="@+id/tvCost"
+                    android:id="@+id/tvCost1"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_margin="@dimen/_12sdp"/>
             </RelativeLayout>
-
+            <Button
+                android:id="@+id/Calculate"
+                android:text="Calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
             <Button
                 android:id="@+id/btnProceed"
                 android:text="Proceed"
