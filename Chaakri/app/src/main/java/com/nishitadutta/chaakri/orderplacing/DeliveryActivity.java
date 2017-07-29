@@ -1,6 +1,7 @@
 package com.nishitadutta.chaakri.orderplacing;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 
 import com.nishitadutta.chaakri.FirebaseManager;
 import com.nishitadutta.chaakri.R;
+import com.nishitadutta.chaakri.ViewSakhiActivity;
 import com.nishitadutta.chaakri.models.order;
 
 import butterknife.BindView;
@@ -27,7 +29,8 @@ public class DeliveryActivity  extends AppCompatActivity{
 
     @BindView(R.id.btnSubmit)
     Button btnSubmit;
-
+@BindView(R.id.viewSakhi)
+        Button viewSakhi;
     order Order;
 
     @Override
@@ -69,7 +72,13 @@ public class DeliveryActivity  extends AppCompatActivity{
         });
 
 
-
+viewSakhi.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent in=new Intent(DeliveryActivity.this,ViewSakhiActivity.class);
+        startActivity(in);
+    }
+});
 
 
     }

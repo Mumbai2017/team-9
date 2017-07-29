@@ -16,6 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".orderplacing.DeliveryActivity"/>
+        <activity android:name=".ViewSakhiActivity"/>
+        <activity android:name=".SplashActivity"/>
     </application>
 
 </manifest>
