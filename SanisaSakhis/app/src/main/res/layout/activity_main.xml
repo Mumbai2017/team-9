@@ -34,24 +34,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tabLayout"
+
+        <GridView
+            android:id="@+id/gridView"
+            android:numColumns="2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="?android:attr/actionBarSize"
-            app:tabGravity="fill"
-            app:tabMode="fixed"
-            android:background="@color/colorPrimary"
-            app:tabTextColor="@android:color/white">
+            android:layout_height="match_parent"
+            android:layout_marginTop="?android:attr/actionBarSize">
 
-        </android.support.design.widget.TabLayout>
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/viewPager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </android.support.v4.view.ViewPager>
+        </GridView>
 
         <!--<android.support.v7.widget.RecyclerView-->
             <!--android:layout_width="match_parent"-->
@@ -60,12 +51,12 @@
 
         <!--</android.support.v7.widget.RecyclerView>-->
     </LinearLayout>
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab_new_post"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/ic_image_edit"
-        android:layout_margin="16dp"/>
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab_new_post"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:src="@drawable/ic_image_edit"-->
+        <!--android:layout_margin="16dp"/>-->
 </RelativeLayout>

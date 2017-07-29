@@ -1,13 +1,17 @@
 package com.sumit.dell_pc.sanishasakhis.language;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.sumit.dell_pc.sanishasakhis.Inventory.Inventory_MainActivty;
 import com.sumit.dell_pc.sanishasakhis.R;
 
 import java.util.ArrayList;
@@ -34,7 +38,7 @@ public class GridAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int i) {
-        return null;
+        return strings.get(i);
     }
 
     @Override
@@ -43,7 +47,7 @@ public class GridAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(final int i, View view, ViewGroup viewGroup) {
         View grid;
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -56,15 +60,50 @@ public class GridAdapter extends BaseAdapter {
             ImageView imageView = (ImageView) grid.findViewById(R.id.grid_image);
             textView.setText(strings.get(i));
             imageView.setImageDrawable(imageViews.get(i));
-        } else {
-            grid = (View) view;
+
+
+            grid.setOnClickListener(new View.OnClickListener(){
+
+                @Override
+                public void onClick(View v) {
+                    Log.e("Clicked", strings.get(i));
+                    String val= strings.get(i);
+
+                    try{
+                        if(val.equalsIgnoreCase("Inventory")) {
+                            Intent intent = new Intent(context, Inventory_MainActivty.class);
+                            context.startActivity(intent);
+                        }
+                    }catch(Exception e){
+                        Log.e("Ex:", e.toString());
+                    }
+                }
+            });
+
+
+        } else{
+                grid = (View) view;
+            }
+
+
+            return grid;
         }
 
-        return grid;
-    }
 
-    @Override
-    public CharSequence[] getAutofillOptions() {
-        return new CharSequence[0];
+
+        //Menu item Pair
+        private class HomeMenu {
+            String optionName;
+            int iconId;
+
+            HomeMenu() {
+                optionName = null;
+                iconId = 0;
+            }
+
+            HomeMenu(String optionName, int iconId) {
+                this.optionName = optionName;
+                this.iconId = iconId;
+            }
+        }
     }
-}
