@@ -71,7 +71,7 @@ public class PlaceOrderActivity extends AppCompatActivity {
             public void onClick(View v) {
                for(int i=0; i<checkboxes.size();i++){
                    if(checkboxes.get(i).isChecked()){
-                       int qty=numberpickers.get(i).getValue();
+                        qty=numberpickers.get(i).getValue();
                        total+=qty*50;
                        Log.d(tvCost.getText().toString(),"MSSAGE");
                        UpdateText(total);
