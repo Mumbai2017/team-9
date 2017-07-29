@@ -13,7 +13,6 @@ import android.widget.EditText;
 import com.nishitadutta.chaakri.FirebaseManager;
 import com.nishitadutta.chaakri.R;
 import com.nishitadutta.chaakri.ViewSakhiActivity;
-import com.nishitadutta.chaakri.models.order;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,7 +30,7 @@ public class DeliveryActivity  extends AppCompatActivity{
     Button btnSubmit;
 @BindView(R.id.viewSakhi)
         Button viewSakhi;
-    order Order;
+    com.nishitadutta.chaakri.models.Order Order;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -50,7 +49,7 @@ public class DeliveryActivity  extends AppCompatActivity{
                     AlertDialog.Builder builder = new AlertDialog.Builder(DeliveryActivity.this);
 
 // 2. Chain together various setter methods to set the dialog characteristics
-                    builder.setMessage("Are you sure you want to place the order?")
+                    builder.setMessage("Are you sure you want to place the Order?")
                             .setTitle("Confirm Order");
                     builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
