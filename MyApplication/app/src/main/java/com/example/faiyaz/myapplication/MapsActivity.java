@@ -1,5 +1,4 @@
 package com.example.faiyaz.myapplication;
-
 import android.location.Address;
 import android.location.Geocoder;
 import android.support.v4.app.FragmentActivity;
