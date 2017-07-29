@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,11 +8,28 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.nishitadutta.chaakri.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.nishitadutta.chaakri.MainActivity"
+    android:weightSum="1">
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="DELIVERY DETAILS"
+
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text=""
         android:id="@+id/textView" />
 
@@ -62,3 +79,36 @@
         android:layout_marginRight="12dp"
         android:layout_marginEnd="12dp" />
 </RelativeLayout>
+=======
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:text="Enter your delivery address:"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/a1234"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_weight="0.23"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        ></Button>
+
+</LinearLayout>
+>>>>>>> 33870a4e73d0e79e841a7e5dd1fd744a5de23045
