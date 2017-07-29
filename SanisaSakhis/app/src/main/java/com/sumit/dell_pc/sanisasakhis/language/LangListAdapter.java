@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.sumit.dell_pc.firebasedemo.R;
+import com.sumit.dell_pc.sanisasakhis.R;
 
 import java.util.List;
 

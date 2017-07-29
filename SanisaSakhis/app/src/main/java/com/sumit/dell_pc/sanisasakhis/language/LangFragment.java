@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.miguelcatalan.materialsearchview.MaterialSearchView;
-import com.sumit.dell_pc.firebasedemo.R;
+import com.sumit.dell_pc.sanisasakhis.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
