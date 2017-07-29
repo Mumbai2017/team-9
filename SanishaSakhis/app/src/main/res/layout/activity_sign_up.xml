@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sumit.dell_pc.sanishasakhis.auth.SignUpActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:src="@drawable/firebase_auth_120dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:text="Shramik Naari Sangh (SaNiSa)"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/sName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/etext_outline"
+        android:hint="Enter Name..."
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/sMoblieNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/etext_outline"
+        android:hint="Mobile No..."
+        android:inputType="number"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/sEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/etext_outline"
+        android:hint="Enter your Email..."
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/sPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/etext_outline"
+        android:hint="Enter Password..."
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/sAddreess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/etext_outline"
+        android:hint="Enter your Address..."
+        android:inputType="textImeMultiLine"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/bSignUP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/sbutton_outine"
+        android:padding="12dp"
+        android:text="SIGN UP"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
