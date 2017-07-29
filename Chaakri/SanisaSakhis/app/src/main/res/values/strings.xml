@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Sakhis</string>
+    <string name="status">Status: %s</string>
+    <string name="signin">Sign in with Google</string>
+    <string name="signout">SignOut</string>
+    <string name="disconnect">disconnect</string>
+    <string name="details">details: %s</string>
+    <string name="loading">Loading...</string>
+    <string name="language">English (United Kingdom)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="langdemo">LangDemo</string>
+    <string name="email_id_hint">Email Id...</string>
+    <string name="password_hint">Password...</string>
+    <string name="title">Sanisa</string>
+
+    <string-array name="query_suggestions">
+        <item>Android</item>
+        <item>iOS</item>
+        <item>SCALA</item>
+        <item>Ruby</item>
+        <item>JavaScript</item>
+    </string-array>
+
+
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="hello_fragment">Hello fragment</string>
+
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="topFree_fragment">Tap Free Fragment</string>
+        <string name="TopPaid_fragment">Top Paid Fragment</string>
+
+
+    <string-array name="all_images">
+        <item>@drawable/ic_check_black_24dp</item>
+        <item>@drawable/ic_check_black_24dp</item>
+        <item>@drawable/ic_check_black_24dp</item>
+        <item>@drawable/ic_check_black_24dp</item>
+        <item>@drawable/ic_check_black_24dp</item>
+        <item>@drawable/ic_check_black_24dp</item>
+        <item>@drawable/ic_check_black_24dp</item>
+        <item>@drawable/ic_check_black_24dp</item>
+    </string-array>
+
+        <string-array name="Web">
+            <item>Google Search</item>
+            <item>Yahoo Search</item>
+            <item>Bing Search</item>
+            <item>Azone Search</item>
+            <item>India Search</item>
+            <item>Hacker Search</item>
+            <item>King Search</item>
+            <item>Sumit Search</item>
+        </string-array>
+</resources>
