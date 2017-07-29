@@ -2,7 +2,7 @@ package com.nishitadutta.chaakri.models;
 
 import java.util.Dictionary;
 
-public class sakhi {
+public class Sakhi {
     public String username;
     public int userId;
     public String email;
@@ -14,9 +14,9 @@ public class sakhi {
     public String address;
 	public String pickuptime;
 	public Dictionary<String, Integer> menuItem;
-    public sakhi()
+    public Sakhi()
     {}
-    public sakhi(String username, int userId, String email, String fname, String lname, int mobno, int NgoOrderNo, int CusOrderNo, String address, String pickuptime, Dictionary<String, Integer> menuItem)
+    public Sakhi(String username, int userId, String email, String fname, String lname, int mobno, int NgoOrderNo, int CusOrderNo, String address, String pickuptime, Dictionary<String, Integer> menuItem)
     {
 		this.username = username;
 		this.userId=userId;
