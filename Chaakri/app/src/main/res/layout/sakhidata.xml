@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="30dp"
+            android:text="SAKHI DATA"
+            android:gravity="center"
+            android:layout_span="6"></TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:text="NAME"
+            android:textStyle="bold"
+            android:typeface="serif"></TextView>
+            <TextView
+            android:id="@+id/TextView03"
+        android:text="CONTACT NO"
+        android:textStyle="bold"
+        android:typeface="serif"></TextView>
+        <TextView
+            android:id="@+id/TextView03"
+            android:text="LOCATION"
+            android:textStyle="bold"
+            android:typeface="serif"></TextView>
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Manali Soman"
+            android:id="@+id/textView2"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:id="@+id/textView3"
+            android:text="9876546789"
+            android:gravity="center_horizontal"></TextView>
+        <TextView
+            android:text="M.G.Road,Mulund"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"></TextView>
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Radhika Agnihotri"
+            android:id="@+id/textView2"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:id="@+id/textView3"
+            android:text="9878965465"
+            android:gravity="center_horizontal"></TextView>
+        <TextView
+            android:text="Zaver Road,Mulund"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"></TextView>
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Raseela Panchal"
+            android:id="@+id/textView2"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:id="@+id/textView3"
+            android:text="8907678954"
+            android:gravity="center_horizontal"></TextView>
+        <TextView
+            android:text="Amboli,Andheri"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"></TextView>
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Leela Palan"
+            android:id="@+id/textView2"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:id="@+id/textView3"
+            android:text="8765458901"
+            android:gravity="center_horizontal"></TextView>
+        <TextView
+            android:text="Kalva,Thane"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"></TextView>
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Sanya Shaikh"
+            android:id="@+id/textView2"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:id="@+id/textView3"
+            android:text="8907654356"
+            android:gravity="center_horizontal"></TextView>
+        <TextView
+            android:text="Hiranandani,Powai"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"></TextView>
+
+    </TableRow><TableRow
+    android:layout_height="wrap_content"
+    android:id="@+id/tableRow2"
+    android:layout_width="match_parent">
+    <TextView
+        android:text="Priya Raman"
+        android:id="@+id/textView2"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:id="@+id/textView3"
+        android:text="8978907453"
+        android:gravity="center_horizontal"></TextView>
+    <TextView
+        android:text="Karve Road,Thane"
+        android:id="@+id/textView4"
+        android:gravity="center_horizontal"></TextView>
+
+</TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Ananya Sahani"
+            android:id="@+id/textView2"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:id="@+id/textView3"
+            android:text="7865678905"
+            android:gravity="center_horizontal"></TextView>
+        <TextView
+            android:text="Kanamwarnagar,Vikhroli"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"></TextView>
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Suman Agasthi"
+            android:id="@+id/textView2"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:id="@+id/textView3"
+            android:text="7878654389"
+            android:gravity="center_horizontal"></TextView>
+        <TextView
+            android:text="Shreenagar,Thane"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"></TextView>
+    </TableRow><TableRow
+    android:layout_height="wrap_content"
+    android:id="@+id/tableRow2"
+    android:layout_width="match_parent">
+    <TextView
+        android:text="Mary Fernandes"
+        android:id="@+id/textView2"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:id="@+id/textView3"
+        android:text="9089789087"
+        android:gravity="center_horizontal"></TextView>
+    <TextView
+        android:text="Hanumannagar,Mulund"
+        android:id="@+id/textView4"
+        android:gravity="center_horizontal"></TextView>
+
+</TableRow><TableRow
+    android:layout_height="wrap_content"
+    android:id="@+id/tableRow2"
+    android:layout_width="match_parent">
+    <TextView
+        android:text="Minal Shinde"
+        android:id="@+id/textView2"
+        android:textStyle="bold"></TextView>
+    <TextView
+        android:id="@+id/textView3"
+        android:text="8787969080"
+        android:gravity="center_horizontal"></TextView>
+    <TextView
+        android:text="Prabhadevi,Dadar"
+        android:id="@+id/textView4"
+        android:gravity="center_horizontal"></TextView>
+
+</TableRow>
+
+
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Samrridhi Sawant"
+            android:id="@+id/textView2"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:text="9090879087"
+            android:id="@+id/textView3"
+            android:gravity="center_horizontal"></TextView>
+        <TextView
+            android:text="Rajawadi,Ghatkopar"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"></TextView>
+    </TableRow>
+
+
+</TableLayout>
