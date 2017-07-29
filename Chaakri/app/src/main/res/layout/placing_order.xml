@@ -24,11 +24,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <CheckBox
+                    android:id="@+id/checkbox1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Breakfast"/>
 
                 <NumberPicker
+                    android:id="@+id/number1"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -41,11 +43,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
+                    android:id="@+id/checkbox2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Methi masala"/>
 
                 <NumberPicker
+                    android:id="@+id/number2"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -58,11 +62,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
+                    android:id="@+id/checkbox3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jeera"/>
 
                 <NumberPicker
+                    android:id="@+id/number3"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -73,11 +79,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
+                    android:id="@+id/checkbox4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Khichdi"/>
 
                 <NumberPicker
+                    android:id="@+id/number4"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -89,11 +97,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
+                    android:id="@+id/checkbox5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Low Calorie"/>
 
                 <NumberPicker
+                    android:id="@+id/number5"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -105,11 +115,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
+                    android:id="@+id/checkbox6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nachni"/>
 
                 <NumberPicker
+                    android:id="@+id/number6"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -122,11 +134,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
+                    android:id="@+id/checkbox7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Peppery Oats"/>
 
                 <NumberPicker
+                    android:id="@+id/number7"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -139,10 +153,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
+                    android:id="@+id/checkbox8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Punjabi Masala"/>
                 <NumberPicker
+                    android:id="@+id/number8"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
@@ -156,10 +172,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <CheckBox
+                    android:id="@+id/checkbox9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Punjabi Masala"/>
                 <NumberPicker
+                    android:id="@+id/number9"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_alignParentRight="true"
