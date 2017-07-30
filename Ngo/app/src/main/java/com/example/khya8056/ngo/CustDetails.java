@@ -10,13 +10,18 @@ import android.view.MenuItem;
 import com.example.khya8056.ngo.Auth.LoginActivity;
 import com.google.firebase.auth.FirebaseAuth;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 public class CustDetails extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mAuthistener;
 
+    Integer value;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cust_details);
+        value = getIntent().getIntExtra(EXTRA_MESSAGE,0);
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
