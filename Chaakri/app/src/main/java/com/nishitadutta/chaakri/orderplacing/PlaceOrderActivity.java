@@ -1,13 +1,17 @@
 package com.nishitadutta.chaakri.orderplacing;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.NumberPicker;
 import android.widget.TextView;
+
+
 
 import com.nishitadutta.chaakri.R;
 
@@ -22,44 +26,74 @@ import butterknife.ButterKnife;
  */
 
 public class PlaceOrderActivity extends AppCompatActivity {
-
-    @BindViews({R.id.checkbox1, R.id.checkbox2, R.id.checkbox3, R.id.checkbox3, R.id.checkbox4, R.id.checkbox5, R.id.checkbox6,
-    R.id.checkbox7, R.id.checkbox8, R.id.checkbox9})
+   // @BindView(R.id.tvCost1)
+    TextView tvCost;
+    @BindViews({R.id.checkbox11, R.id.checkbox22, R.id.checkbox33, R.id.checkbox44, R.id.checkbox55, R.id.checkbox66,
+    R.id.checkbox77, R.id.checkbox88, R.id.checkbox99})
     List<CheckBox> checkboxes;
 
-    @BindViews({R.id.number1, R.id.number2, R.id.number3, R.id.number3, R.id.number4, R.id.number5, R.id.number6,
-            R.id.number7, R.id.number8, R.id.number9})
+    @BindViews({R.id.number11, R.id.number22, R.id.number33, R.id.number44, R.id.number55, R.id.number66,
+            R.id.number77, R.id.number88, R.id.number99})
     List<NumberPicker> numberpickers;
-
+    @BindView(R.id.Calculate)
+    Button cal;
     @BindView(R.id.btnProceed)
     Button btnProceed;
-    int total;
-    @BindView(R.id.tvCost)
-    TextView tvCost;
+    int total,qty;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        try {
+           // FileInputStream serviceAccount =
+          //          new FileInputStream("chaakri-64318-firebase-adminsdk-lcj79-61e70237cc.json");
 
+           // FirebaseOptions options = new FirebaseOptions.Builder()
+           //         .setCredential(FirebaseCredentials.fromCertificate(serviceAccount))
+           //         .setDatabaseUrl("https://chaakri-64318.firebaseio.com")
+           //         .build();
+
+           // FirebaseApp.initializeApp(options);
+        }catch(Exception e){
+            Log.e("DeliverActivity", "onCreate: " + e.getMessage() );
+        }
         setContentView(R.layout.placing_order);
         ButterKnife.bind(this);
+        tvCost=(TextView)findViewById(R.id.tvCost1);
         for (NumberPicker num: numberpickers) {
             num.setMinValue(0);
             num.setMaxValue(50);
         }
-        btnProceed.setOnClickListener(new View.OnClickListener() {
+       cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                for(int i=0; i<checkboxes.size();i++){
                    if(checkboxes.get(i).isChecked()){
-                       int qty=numberpickers.get(i).getValue();
+                        qty=numberpickers.get(i).getValue();
                        total+=qty*50;
+                       Log.d(tvCost.getText().toString(),"MSSAGE");
+                       UpdateText(total);
                    }
-               }
 
+               }
+             //   tvCost.setText(total);
+
+            }
+        });
+        btnProceed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(PlaceOrderActivity.this,DeliveryActivity.class);
+                i.putExtra("volume",qty);
+                startActivity(i);
             }
         });
 
 
 
+
+    }
+    public void UpdateText(int total){
+        tvCost.setText(new Integer(total).toString());
     }
 }

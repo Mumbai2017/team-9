@@ -4,6 +4,7 @@
     android:layout_height="match_parent">
 
     <EditText
+        android:layout_marginTop="@dimen/_60sdp"
         android:id="@+id/etAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,4 +16,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="PLACE ORDER"/>
+
+    <Button
+        android:id="@+id/viewSakhi"
+        android:text="VIEW SAKHI DETAILS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--Button
+        android:id="@+id/btnFeedback"
+        android:text="GIVE FEEDBACK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" /-->
+
 </LinearLayout>

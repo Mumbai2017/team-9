@@ -6,7 +6,7 @@ import android.os.Parcelable;
 
 import java.util.Dictionary;
 
-public class order implements Parcelable{
+public class Order implements Parcelable{
     public int orderno;
     public int buyerUserId;
     public int sellerUserId;
@@ -14,11 +14,11 @@ public class order implements Parcelable{
     public String address;
     public String pickuptime;
 	public Dictionary<String, Integer> menuItem;
-    public order(String cusAddress)
+    public Order(String cusAddress)
     {
 		this.address=cusAddress;
 	}
-    public order(int orderno, int buyerUserId, int sellerUserId, int pickupDelivery, String address, String pickuptime, Dictionary<String, Integer> menuItem)
+    public Order(int orderno, int buyerUserId, int sellerUserId, int pickupDelivery, String address, String pickuptime, Dictionary<String, Integer> menuItem)
     {
 		this.orderno = orderno;
 		this.buyerUserId=buyerUserId;
@@ -29,18 +29,18 @@ public class order implements Parcelable{
 		this.menuItem = menuItem;
     }
 
-    public static final Parcelable.Creator<order> CREATOR
-            = new Parcelable.Creator<order>() {
-        public order createFromParcel(Parcel in) {
-            return new order(in);
+    public static final Parcelable.Creator<Order> CREATOR
+            = new Parcelable.Creator<Order>() {
+        public Order createFromParcel(Parcel in) {
+            return new Order(in);
         }
 
-        public order[] newArray(int size) {
-            return new order[size];
+        public Order[] newArray(int size) {
+            return new Order[size];
         }
     };
 
-    private order (Parcel in){
+    private Order(Parcel in){
         orderno=in.readInt();
         buyerUserId=in.readInt();
         sellerUserId=in.readInt();

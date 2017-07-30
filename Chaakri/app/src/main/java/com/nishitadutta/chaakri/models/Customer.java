@@ -1,7 +1,7 @@
 package com.nishitadutta.chaakri.models;
 
 
-public class cus {
+public class Customer {
     public String username;
     public int userId;
     public String email;
@@ -10,9 +10,9 @@ public class cus {
     public int mobno;
     public int orderno;
     public String address;
-    public cus()
+    public Customer()
     {}
-    public cus(String username, int userId, String email, String fname, String lname, int mobno, int orderno, String address)
+    public Customer(String username, int userId, String email, String fname, String lname, int mobno, int orderno, String address)
     {
 		this.username = username;
 		this.userId=userId;

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <RelativeLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Feedback"
+      android:textSize="25dp"
+      android:textStyle="bold"
+      android:id="@+id/tfeedback"/>
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="200dp"/>
+     <!-- Background Color -->
+     <solid android:color="#000000" />
+
+     <!-- Border Color -->
+     <stroke android:width="1dp" android:color="#ff9900" />
+
+     <!-- Round Corners -->
+     <corners android:radius="5dp" />
+
+    </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Recommendations"
+          android:textSize="25dp"
+          android:textStyle="bold"
+          android:id="@+id/tfrecom"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="200dp"/>
+      <!-- Background Color -->
+      <solid android:color="#000000" />
+
+      <!-- Border Color -->
+      <stroke android:width="1dp" android:color="#ff9900" />
+
+      <!-- Round Corners -->
+      <corners android:radius="5dp" />
+
+
+  </RelativeLayout>
+
+</LinearLayout>
