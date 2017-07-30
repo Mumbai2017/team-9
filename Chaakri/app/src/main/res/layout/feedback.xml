@@ -42,7 +42,7 @@
       <EditText
           android:layout_width="match_parent"
           android:layout_height="200dp"/>
-      <!-- Background Color -->
+
       <solid android:color="#000000" />
 
       <!-- Border Color -->
