@@ -15,6 +15,8 @@ import com.example.khya8056.ngo.MainActivity;
 import com.example.khya8056.ngo.R;
 import com.example.khya8056.ngo.custlist;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 
 public class Adapter extends BaseAdapter{
     String [] result;
@@ -70,11 +72,10 @@ public class Adapter extends BaseAdapter{
             public void onClick(View v) {
 // TODO Auto-generated method stub
                 Intent intent = new Intent(context, CustDetails.class);
-                intent.putExtra("EXTRAMSG",result[position]);
+                intent.putExtra(EXTRA_MESSAGE,result[position]);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
 
-                Toast.makeText(context, "You Clicked " + result[position], Toast.LENGTH_LONG).show();
             }
         });
         return view;

@@ -21,6 +21,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".CustDetails" />
         <activity android:name=".custlist" />
+        <activity android:name=".PendingOrder" />
+        <activity android:name=".OrderDetail"></activity>
     </application>
 
 </manifest>
