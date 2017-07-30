@@ -26,7 +26,7 @@ public class SplashActivity extends AwesomeSplash {
         configSplash.setAnimLogoSplashDuration(500); //int ms
         configSplash.setAnimLogoSplashTechnique(Techniques.FadeIn); //choose one form Techniques (ref: https://github.com/daimajia/AndroidViewAnimations)
 
-
+//
         //Customize Title
         configSplash.setTitleSplash("Sa'Ni'Sa");
         configSplash.setTitleTextColor(R.color.colorPrimaryDark);
