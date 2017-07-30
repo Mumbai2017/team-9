@@ -23,10 +23,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Button
+    <!--Button
         android:id="@+id/btnFeedback"
         android:text="GIVE FEEDBACK"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" /-->
 
 </LinearLayout>

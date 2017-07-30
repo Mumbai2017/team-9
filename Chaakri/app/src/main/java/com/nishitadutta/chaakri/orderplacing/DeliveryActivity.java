@@ -10,12 +10,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.nishitadutta.chaakri.FeedbackActivity;
 import com.nishitadutta.chaakri.FirebaseManager;
 import com.nishitadutta.chaakri.R;
 import com.nishitadutta.chaakri.ViewSakhiActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Nishita on 29-07-2017.
@@ -81,4 +83,10 @@ viewSakhi.setOnClickListener(new View.OnClickListener() {
 
 
     }
+
+   /* @OnClick(R.id.btnFeedback)
+    public void giveFeedback(View v){
+        Intent in=new Intent(DeliveryActivity.this,FeedbackActivity.class);
+        startActivity(in);
+    }*/
 }

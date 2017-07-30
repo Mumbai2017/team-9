@@ -24,7 +24,7 @@
 
      <!-- Round Corners -->
      <corners android:radius="5dp" />
-     >
+
     </RelativeLayout>
 
   <RelativeLayout
@@ -50,7 +50,7 @@
 
       <!-- Round Corners -->
       <corners android:radius="5dp" />
-      />
+
 
   </RelativeLayout>
 
