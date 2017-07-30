@@ -13,7 +13,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Place ORDER"
-                android:textSize="20dp"/>
+                android:textSize="30dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
                 <NumberPicker
                     android:id="@+id/number11"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentRight="true"
                     android:layout_margin="@dimen/_12sdp"/>
 
@@ -51,7 +51,7 @@
                 <NumberPicker
                     android:id="@+id/number22"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentRight="true"
                     android:layout_margin="@dimen/_12sdp"/>
 
@@ -70,7 +70,7 @@
                 <NumberPicker
                     android:id="@+id/number33"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentRight="true"
                     android:layout_margin="@dimen/_12sdp"/>
 
@@ -87,7 +87,7 @@
                 <NumberPicker
                     android:id="@+id/number44"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentRight="true"
                     android:layout_margin="@dimen/_12sdp"/>
 
@@ -105,7 +105,7 @@
                 <NumberPicker
                     android:id="@+id/number55"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentRight="true"
                     android:layout_margin="@dimen/_12sdp"/>
 
@@ -123,7 +123,7 @@
                 <NumberPicker
                     android:id="@+id/number66"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentRight="true"
                     android:layout_margin="@dimen/_12sdp"/>
 
@@ -142,7 +142,7 @@
                 <NumberPicker
                     android:id="@+id/number77"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentRight="true"
                     android:layout_margin="@dimen/_12sdp"/>
 
@@ -160,7 +160,7 @@
                 <NumberPicker
                     android:id="@+id/number88"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentRight="true"
                     android:layout_margin="@dimen/_12sdp"/>
 
@@ -179,7 +179,7 @@
                 <NumberPicker
                     android:id="@+id/number99"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
                     android:layout_alignParentRight="true"
                     android:layout_margin="@dimen/_12sdp"/>
 
@@ -201,7 +201,7 @@
                     android:layout_alignParentRight="true"
                     android:id="@+id/tvCost1"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
                     android:layout_margin="@dimen/_12sdp"/>
             </RelativeLayout>
             <Button
