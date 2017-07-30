@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:next="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/alertBox"
+        android:icon="@drawable/chat_model"
+        android:iconTint="@string/alert"
+        android:title="@string/alert"
+        next:showAsAction="always"/>
+</menu>

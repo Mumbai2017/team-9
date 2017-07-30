@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CFGFinal</string>
+    <string name="loadData">Loading..</string>
+    <string name="title">CFG</string>
+    <string name="Inventory">Inventory</string>
+    <string name="InventoryNo">InventoryNo</string>
+    <string name="hello_blank_fragment">Blank Demo</string>
+    <string name="alert_dialog_demo">Ngo Demo</string>
+    <string name="alert_dumytext">Notification</string>
+    <string name="cancelAlert">Cancel</string>
+    <string name="heading">Handing</string>
+    <string name="description">Description</string>
+    <string name="alert">Alert</string>
+    <string name="send_button_label">Send</string>
+</resources>
