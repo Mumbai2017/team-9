@@ -14,9 +14,7 @@ import android.widget.TextView;
 
 
 import com.nishitadutta.chaakri.R;
-import com.nishitadutta.chaakri.models.order;
 
-import java.io.FileInputStream;
 import java.util.List;
 
 import butterknife.BindView;
